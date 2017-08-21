@@ -1,4 +1,82 @@
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
   .dazzlemix-content
     background:url(images/diamond@2x.png) top right no-repeat, linear-gradient(-225deg, #FFFFFF 0%, #F5FAFF 100%)
-    background-size: 986px 1024px, auto
+    background-size: 986px 100vh, auto
+
+@media (min-width: 1440px)
+  .dazzlemix-content
+    height: 100vh
+    min-height: 810px
+
+  .dazzlemix-top
+    margin-bottom: 280px
+
+@media (max-width: 1439px)
+  .dazzlemix-top
+    margin-bottom: 370px
+
+  .dazzlemix-content
+    height: 100vh
+    min-height: 810px
+    padding: 47px
+    background-size: 61vw 100%, auto
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+    .dazzlemix-content
+      background:url(images/diamond@2x.png) top right no-repeat, linear-gradient(-225deg, #FFFFFF 0%, #F5FAFF 100%)
+      background-size: 61vw 100%, auto
+
+@media (max-width: 1023px)
+  .dazzlemix-content
+    min-height: 810px
+
+  .dazzlemix-title
+    width: 420px
+    font-size: 44px
+    line-height: 60px
+
+  .contacts-item
+    color: #102766
+
+  .dazzlemix-contacts
+    align-items: flex-start
+
+  .dazzlemix-features
+    margin-bottom: 20px
+
+  .dazzlemix-bottom
+    flex-direction: column
+
+@media (max-width: 760px)
+  .dazzlemix-content
+    padding: 32px
+    background: linear-gradient(-225deg, #FFFFFF 0%, #F5FAFF 100%)
+
+  .dazzlemix-top
+    margin-bottom: 160px
+
+  .dazzlemix-title
+    margin-bottom: 150px
+    width: 100%
+
+  .dazzlemix-features
+    width: 100%
+
+  .features-list
+    width: 100%
+    flex-direction: column
+    flex-wrap: wrap
+    max-height: 72px
+    align-content: space-between
+
+  .features-item
+    order: 2
+    &:nth-child(4)
+      order: 1
+
+  .contacts-item
+    font-size: 14px
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2)
+      .dazzlemix-content
+        background: linear-gradient(-225deg, #FFFFFF 0%, #F5FAFF 100%)
